@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S H A D O W</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="Logo">
+        </div>
+
+        <!-- Video element for camera feed -->
+        <div id="camera-container">
+            <video id="camera-feed" autoplay muted></video>
+            <div id="mood-display"></div>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+    </nav>
+
+    <div id="main-cont">
+        <div id="cont">
+            <img id="start" src="shdimg.gif" alt="Shadow Image">
+        </div>
+        <div id="player"></div>
+
+        <div id="block">
+            <div id="searchBox">
+                <form id="searchForm">
+                    <input type="text" placeholder="Type your query here..." required>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+            <div id="text">    
+                <div id="recognizedText"></div>
+                <div id="spokenText"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="shadow.js"></script>
+</body>
+</html>

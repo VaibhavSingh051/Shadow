@@ -1,0 +1,186 @@
+
+body {
+  color: white;
+  background-color: black;
+  background-image: linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+#logo img {
+  height: 65px;
+  margin-left: 2px;
+}
+/* Navbar styles */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+}
+
+/* Camera container */
+#camera-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px; /* Adjust spacing */
+}
+
+#camera-feed {
+  width: 100px;
+  height: 80px;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  background-color: black;
+}
+
+#mood-display {
+  margin-top: 5px;
+  color: white;
+  font-size: 14px;
+}
+
+/* Adjust other elements in the navbar */
+#navbar ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-grow: 1;
+}
+
+#navbar ul li {
+  margin: 0px 25px;
+  font-size: 26px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+
+#select-images-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Clip', sans-serif;
+  margin-left: auto;
+  margin-right: 34px;
+}
+
+#select-images-btn:hover {
+  background-color: #555;
+}
+
+/* Adjust main content to avoid being hidden by the fixed navbar */
+#main-cont {
+  padding-top: 85px; /* Adjust this value based on the height of your navbar */
+}
+
+/* header */
+#hd {
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 215px;
+  margin-left: 150px;
+}
+
+.hed {
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* body */
+#main-cont {
+  display: flex;
+}
+
+#cont {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 577px;
+}
+
+#cont img {
+  width: 700px;
+  height: 614px;
+}
+
+#block {
+  display: flex;
+  flex-direction: column;
+  height: 532px;
+  width: 30%;
+  margin: 35px 10px;
+  border: 2px solid whitesmoke;
+  border-radius: 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#text {
+  display: flex;
+  flex-direction: row;
+}
+
+#recognizedText, #spokenText {
+  word-wrap: break-word;
+  padding: 2px 10px;
+  flex-grow: 1;
+}
+
+/* Search */
+#searchBox {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#searchBox form {
+  display: flex;
+  justify-content: space-between;
+}
+
+#searchBox input[type="text"] {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#searchBox button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+#searchBox button:hover {
+  background-color: #555;
+}
+
+/* header animation */

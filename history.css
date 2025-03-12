@@ -1,0 +1,25 @@
+#main-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#voice-history-section, #search-history-section {
+    border: 2px solid whitesmoke;
+    height: 82vh;
+    width: 45%;
+    overflow-y: auto; /* Add vertical scrollbar */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#delete-voice-history, #delete-search-history {
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+#delete-voice-history:hover, #delete-search-history:hover {
+    cursor: pointer;
+}
